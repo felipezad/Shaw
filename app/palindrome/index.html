@@ -1,10 +1,14 @@
-<html>
+<html ng-app="app">
 <head>
   <meta charset="utf-8" />
-
+  <script src="/scripts/angular/angular.min.js"></script>
+  <script src="/controller/index.js"></script>
 </head>
 <body>
-  <h1>Hello</h1>
+  <h1>Shaw</h1>
+  <div ng-controller="IndexController as index">
+    <span>{{index.homePage}}</span>
+  </div>
 
 </body>
 

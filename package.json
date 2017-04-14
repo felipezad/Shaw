@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/felipezad/Shaw#readme",
   "dependencies": {
+    "angular": "^1.6.4",
     "express": "^4.15.2"
   }
 }

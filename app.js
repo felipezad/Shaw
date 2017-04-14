@@ -10,9 +10,9 @@ app.get('/', function (req, res) {
 
 })
 
-app.post('/', function(req,res){
-
-  var result = checkPalindrom(str);
+app.get('/:palindrome', function(req,res){
+  var str = req.params.palindrome
+  var result = checkPalindrom(str)
   if(result)
     res.sendStatus(200)
   res.sendStatus(400)

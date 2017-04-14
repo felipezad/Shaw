@@ -3,7 +3,9 @@ var app = express()
 var path = require('path')
 
 
-app.use(express.static(__dirname + '/app'));
+
+app.use('/scripts',express.static(__dirname + '/node_modules'));
+app.use('/controller',express.static(__dirname + '/app'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname+'/app/palindrome/index.html'));
